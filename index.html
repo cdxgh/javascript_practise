@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js</title>
+</head>
+<body>
+    <nav class="block">
+        <p class="paragrap">Welcome to my website</p>
+
+    </nav>
+    <div class="block">
+        <H4>Hey MY name is <span id = "username">Abdul Quadir</span></H4>
+        <p class="paragrap">Here is code for you</p>
+        <pre><code>console.log('hey there')</code></pre>
+   </div>
+   <div id="container"></div>
+   <button id="clickButton">Click ME</button>
+   <script>
+    const button = document.getElementById("clickButton");
+    const container = document.getElementById("container");
+    button.addEventListener("click", ()=>{
+        const el = document.createElement("H1");
+        el.innerText = "ARSHU KHAN";
+        container.appendChild(el);
+    });
+   </script>
+</body>
+
+</html>
